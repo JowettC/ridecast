@@ -1,0 +1,9 @@
+{
+  "name": "ridecast-malaysia",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "forecast": "node scripts/update-forecast.mjs"
+  }
+}
