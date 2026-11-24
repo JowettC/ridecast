@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f9">
+  <meta name="description" content="Plan rides from Singapore to nine Malaysian destinations with route details, riding times, and local rain forecasts.">
+  <title>Ridecast · Ride forecast</title>
+  <link rel="icon" href="./assets/ridecast.svg" type="image/svg+xml">
+  <link rel="preload" href="./assets/dm-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./ride-guide.css">
+  <script src="./ride-guide.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="topbar-inner wrap">
+      <a class="brand" href="#forecast" aria-label="Ridecast forecast"><img src="./assets/ridecast.svg" width="38" height="38" alt=""><span>Ridecast</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#forecast" id="nav-forecast" aria-current="page"><span data-icon="layers"></span>Forecast</a>
+        <a href="#guide" id="nav-guide"><span data-icon="route"></span>Ride guide</a>
+        <a href="#performance" id="nav-performance"><span data-icon="chart"></span>Model performance</a>
+      </nav>
+      <div class="zone"><span class="zone-icon" data-icon="globe"></span><span>Malaysia <span class="zone-separator">/</span> <strong>MYT</strong></span></div>
+    </div>
+  </header>
+  <main id="main" class="wrap" tabindex="-1">
+    <div class="page-intro">
+      <div>
+        <p class="eyebrow"><span class="blue-line"></span><span id="intro-label">Singapore – Malaysia</span></p>
+        <h1 id="page-title">Ride forecast</h1>
+        <p class="intro-copy" id="page-copy">Rain outlooks for nine riding stops across Malaysia.</p>
+      </div>
+      <div class="update">
+        <span id="update-time" class="update-time">Checking forecasts…</span>
+        <span class="update-freq" id="update-frequency">Hourly updates</span>
+        <button class="refresh" id="refresh" type="button" aria-label="Refresh forecasts" title="Refresh forecasts"><span data-icon="refresh"></span></button>
+      </div>
+      <button type="button" id="compare-shortcut" class="guide-secondary" hidden><span data-icon="compare"></span>Compare all rides</button>
+    </div>
+    <div id="notice" class="notice" role="status" hidden></div>
+    <section id="forecast-view" aria-label="Ride forecast">
+      <div class="spotlight">
+        <article class="hero" aria-labelledby="selected-name">
+          <div class="hero-photo" aria-hidden="true"></div>
+          <div class="hero-shade" aria-hidden="true"></div>
+          <div class="hero-top">
+            <div class="featured-label"><span data-icon="pin"></span> Selected stop</div>
+            <div class="stop-choice">
+              <button class="change-stop" id="change-stop" aria-haspopup="dialog" type="button"><span class="change-label">Change stop</span><span data-icon="chevron-down"></span></button>
+            </div>
+          </div>
+          <div class="hero-text">
+            <p class="hero-region" id="selected-region">Pahang, Malaysia</p>
+            <h2 id="selected-name">Genting Highlands</h2>
+            <div class="hero-call" id="hero-call"><span data-icon="clock"></span><strong>Checking forecast…</strong></div>
+          </div>
+          <div class="photo-rule" aria-hidden="true"></div>
+        </article>
+        <aside class="window-panel" aria-labelledby="window-title">
+          <div class="panel-title"><span class="small-icon" data-icon="clock"></span><h2 id="window-title">Forecast window</h2></div>
+          <div class="horizon-switch" role="group" aria-label="Forecast lead time">
+            <button type="button" data-horizon="10" aria-pressed="true">10-hour outlook</button>
+            <button type="button" data-horizon="24" aria-pressed="false">24-hour outlook</button>
+          </div>
+          <div class="window-body">
+            <div class="window-date" id="window-date">Awaiting forecast window</div>
+            <div class="window-range" id="window-range">—</div>
+            <div class="window-rail" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <p id="window-note" class="window-note">One rain call covers the full three hours.</p>
+          </div>
+          <div class="window-footer"><span data-icon="cpu"></span><div><span>Selected model</span><strong id="window-model">Checking…</strong><time id="issued" hidden></time></div></div>
+        </aside>
+      </div>
+      <div id="forecast-guide" class="route-preview" hidden>
+        <span class="route-preview-icon" data-icon="route"></span>
+        <div><strong id="forecast-guide-name">Ride from Woodlands</strong><p id="forecast-guide-metrics"></p></div>
+        <a class="guide-text-link" id="forecast-guide-link" href="#guide">Ride guide</a>
+      </div>
+      <section class="stops-section" aria-labelledby="stops-title">
+        <div class="section-heading">
+          <div><div class="section-title-line"><h2 id="stops-title">Riding stops</h2><span id="stop-count" class="count">9</span></div><p>Choose a stop to view its riding window.</p></div>
+          <div class="filter-switch" role="group" aria-label="Filter stops by forecast">
+            <button type="button" data-filter="all" aria-pressed="true">All stops</button>
+            <button type="button" data-filter="rain" aria-pressed="false"><span data-icon="rain"></span>Rain</button>
+            <button type="button" data-filter="dry" aria-pressed="false"><span data-icon="sun"></span>Dry</button>
+          </div>
+        </div>
+        <div id="stop-grid" class="stop-grid"></div>
+        <div class="empty" id="empty" hidden><span data-icon="filter"></span><p id="empty-copy"></p><button type="button" id="clear-filter">Show all stops</button></div>
+      </section>
+    </section>
+    <section id="guide-view" aria-label="Ride guide" hidden>
+      <div id="guide-status" class="guide-status" role="status"><span>Loading ride details…</span><button type="button" id="guide-retry" hidden>Try again</button></div>
+      <div id="guide-content" hidden>
+        <div class="guide-layout">
+          <article class="guide-destination" aria-labelledby="guide-title">
+            <header class="guide-cover" id="guide-cover">
+              <div class="guide-cover-top">
+                <p class="guide-origin"><span data-icon="route"></span><span id="guide-origin"></span></p>
+                <button type="button" class="guide-change" id="guide-change" aria-haspopup="dialog">Change stop <span data-icon="chevron-down"></span></button>
+              </div>
+              <div class="guide-heading"><p class="guide-region" id="guide-region"></p><h2 tabindex="-1" id="guide-title"></h2><p id="guide-best"></p></div>
+              <div class="guide-metrics">
+                <div><small>One-way distance</small><strong id="guide-km"></strong></div>
+                <div><small>Est. riding time</small><strong id="guide-time"></strong></div>
+              </div>
+              <p id="guide-round-trip" class="guide-round-trip" hidden></p>
+            </header>
+            <div class="guide-route-detail">
+              <div class="guide-route-row"><span class="guide-note-icon" data-icon="route"></span><div><h3>Route</h3><p id="guide-route"></p></div></div>
+              <div class="guide-route-row"><span class="guide-note-icon" data-icon="mountain"></span><div><h3>Road character</h3><p id="guide-terrain"></p></div></div>
+              <p class="guide-estimates" id="guide-estimate-note"></p>
+              <div class="guide-actions"><a id="guide-directions" class="guide-primary"><span data-icon="direction"></span>Open directions</a><a id="guide-forecast" class="guide-secondary" href="#forecast"><span data-icon="layers"></span>Destination forecast</a></div>
+            </div>
+          </article>
+          <aside class="guide-compare guide-card" aria-labelledby="compare-title">
+            <div class="guide-compare-head"><h2 id="compare-title" tabindex="-1">Compare rides</h2><label class="guide-sort"><span>Sort by</span><span class="guide-select"><select id="guide-sort"><option value="km">Distance</option><option value="minutes">Riding time</option><option value="name">Name</option></select><i data-icon="chevron-down"></i></span></label></div>
+            <p class="guide-compare-note" id="compare-origin"></p>
+            <table class="guide-table">
+              <caption class="sr-only">Select a destination to open its ride guide</caption>
+              <thead><tr><th scope="col">Destination</th><th scope="col">Distance</th><th scope="col">Ride time</th></tr></thead>
+              <tbody id="guide-rows"></tbody>
+            </table>
+          </aside>
+          <section class="guide-notes guide-card" aria-labelledby="notes-title">
+            <h2 id="notes-title">Rider’s notes</h2>
+            <div class="guide-note"><span class="guide-note-icon positive" data-icon="check"></span><div><h3>Why ride here</h3><p id="guide-highlight"></p><div id="guide-highlight-map"></div></div></div>
+            <div class="guide-note"><span class="guide-note-icon amber" data-icon="attention"></span><div><h3>Trade-off</h3><p id="guide-tradeoff"></p></div></div>
+            <div class="guide-note"><span class="guide-note-icon" data-icon="flag"></span><div><h3>Rider tip</h3><p id="guide-tip"></p></div></div>
+            <div class="guide-sources"><h3>Route &amp; destination sources</h3><div id="guide-sources"></div></div>
+          </section>
+        </div>
+        <section class="guide-planning" aria-labelledby="planning-title">
+          <div class="guide-planning-head"><h2 id="planning-title">Before you ride</h2><p id="guide-checked"></p></div>
+          <div class="guide-planning-grid" id="guide-planning"></div>
+        </section>
+      </div>
+    </section>
+    <section id="performance-view" aria-label="Model performance" hidden>
+      <div class="perf-header">
+        <div><p class="eyebrow">Rain-class F1</p><h2>Backtest by destination</h2><p id="performance-dates">Select a forecast lead to compare results.</p></div>
+        <div class="horizon-switch" role="group" aria-label="Performance forecast lead time">
+          <button type="button" data-horizon="10" aria-pressed="true">10-hour outlook</button>
+          <button type="button" data-horizon="24" aria-pressed="false">24-hour outlook</button>
+        </div>
+      </div>
+      <div id="perf-grid" class="perf-grid"></div>
+      <div class="perf-foot"><span class="small-icon" data-icon="info"></span><p id="perf-note">F1 balances rain precision and recall. Higher is better, with 1.00 the highest possible score.</p></div>
+    </section>
+    <footer>
+      <span class="footer-brand"><img src="./assets/ridecast.svg" alt="" width="20" height="20">Ridecast</span>
+      <span>Forecast inputs from <a href="https://open-meteo.com/">Open-Meteo</a> under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, adapted by Ridecast.</span>
+      <span>Malaysia time (UTC+8)</span>
+    </footer>
+  </main>
+  <dialog id="stop-dialog" aria-labelledby="chooser-title">
+    <div class="dialog-head"><h2 id="chooser-title">Choose a riding stop</h2><button class="icon-button" type="button" id="close-dialog" aria-label="Close destination picker"><span data-icon="x"></span></button></div>
+    <div id="picker-list"></div>
+  </dialog>
+  <span id="announcement" class="sr-only" role="status" aria-live="polite"></span>
+</body>
+</html>

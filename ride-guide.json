@@ -1,0 +1,401 @@
+{
+  "origin": {
+    "name": "Woodlands Checkpoint",
+    "detail": "Singapore end of the Causeway, heading into Johor Bahru."
+  },
+  "estimateNote": "Motorcycle routes run from the Singapore end of the Causeway to the forecast pin, with a separate return to Woodlands. Add your ride to the checkpoint, border queues, breaks and traffic or weather delays. The suggested stop has its own map pin.",
+  "checkedOn": "2026-11-24",
+  "routeSource": {
+    "label": "© OpenStreetMap contributors",
+    "url": "https://www.openstreetmap.org/copyright"
+  },
+  "destinations": [
+    {
+      "id": "kuala-lumpur",
+      "name": "Kuala Lumpur",
+      "km": 360,
+      "minutes": 255,
+      "route": "North–South Expressway (E2) → ELITE (E6) → MEX (E20) → central Kuala Lumpur",
+      "terrain": "Long expressway run and city streets",
+      "bestFor": "A city weekend with an overnight stop",
+      "highlight": "Browse the crafts at Central Market, then stretch your legs on the short walk to Merdeka Square.",
+      "tradeoff": "A same-day return combines two long expressway legs with city traffic, leaving little time for KL itself.",
+      "tip": "For an overnight, confirm motorcycle parking with your accommodation and make its entrance your arrival pin. The two sights are walkable.",
+      "sources": [
+        {
+          "label": "Central Market · Visitor directions",
+          "url": "https://centralmarket.com.my/visit/"
+        },
+        {
+          "label": "Tourism Malaysia · Kuala Lumpur sights",
+          "url": "https://www.malaysia.travel/explore/top-places-to-visit-in-kuala-lumpur"
+        },
+        {
+          "label": "Outbound motorcycle route data",
+          "url": "https://valhalla1.openstreetmap.de/route?json=%7B%22locations%22%3A%5B%7B%22lat%22%3A1.446779%2C%22lon%22%3A103.76791%2C%22heading%22%3A45%7D%2C%7B%22lat%22%3A1.452095%2C%22lon%22%3A103.769268%2C%22type%22%3A%22through%22%2C%22heading%22%3A343%7D%2C%7B%22lat%22%3A3.139%2C%22lon%22%3A101.687%7D%5D%2C%22costing%22%3A%22motorcycle%22%2C%22costing_options%22%3A%7B%22motorcycle%22%3A%7B%22use_ferry%22%3A0%2C%22country_crossing_cost%22%3A0%2C%22country_crossing_penalty%22%3A0%7D%7D%2C%22units%22%3A%22kilometers%22%7D"
+        },
+        {
+          "label": "Return motorcycle route data",
+          "url": "https://valhalla1.openstreetmap.de/route?json=%7B%22locations%22%3A%5B%7B%22lat%22%3A3.139%2C%22lon%22%3A101.687%7D%2C%7B%22lat%22%3A1.452105%2C%22lon%22%3A103.769434%2C%22type%22%3A%22through%22%2C%22heading%22%3A163%7D%2C%7B%22lat%22%3A1.445774%2C%22lon%22%3A103.769804%2C%22heading%22%3A205%7D%5D%2C%22costing%22%3A%22motorcycle%22%2C%22units%22%3A%22kilometers%22%2C%22costing_options%22%3A%7B%22motorcycle%22%3A%7B%22use_ferry%22%3A0%2C%22country_crossing_cost%22%3A0%2C%22country_crossing_penalty%22%3A0%7D%7D%7D"
+        }
+      ],
+      "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1.446779%2C103.76791&destination=3.139%2C101.687&travelmode=two-wheeler",
+      "highlightMap": {
+        "label": "Central Market on map",
+        "url": "https://www.google.com/maps/search/?api=1&query=Central+Market%2C+Jalan+Hang+Kasturi%2C+Kuala+Lumpur%2C+Malaysia"
+      },
+      "roundTripKm": 696,
+      "roundTripMinutes": 490
+    },
+    {
+      "id": "genting-highlands",
+      "name": "Genting Highlands",
+      "km": 414,
+      "minutes": 315,
+      "route": "E2 → Kuala Lumpur → Jalan Gombak (FT68) → Genting Sempah → Genting Highlands",
+      "terrain": "Steep, winding mountain ascent",
+      "bestFor": "A mountain ride with a cool-weather stop",
+      "highlight": "The climb above Gohtong Jaya is the draw. Chin Swee Caves Temple makes a stop before the summit.",
+      "tradeoff": "Mist can cut visibility on the upper bends. The descent needs its own daylight and weather window.",
+      "tip": "If mist closes in lower down, postpone the climb. From Sky Sentral, check whether Awana SkyWay is running to Chin Swee and the summit.",
+      "sources": [
+        {
+          "label": "Tourism Malaysia · Genting mountain conditions",
+          "url": "https://ebrochures.malaysia.travel/en/cool-highlands/genting-highlands/"
+        },
+        {
+          "label": "Resorts World Genting · Awana SkyWay",
+          "url": "https://www.rwgenting.com/en/getting-here/cable-car.html"
+        },
+        {
+          "label": "Outbound motorcycle route data",
+          "url": "https://valhalla1.openstreetmap.de/route?json=%7B%22locations%22%3A%5B%7B%22lat%22%3A1.446779%2C%22lon%22%3A103.76791%2C%22heading%22%3A45%7D%2C%7B%22lat%22%3A1.452095%2C%22lon%22%3A103.769268%2C%22type%22%3A%22through%22%2C%22heading%22%3A343%7D%2C%7B%22lat%22%3A3.424%2C%22lon%22%3A101.793%7D%5D%2C%22costing%22%3A%22motorcycle%22%2C%22costing_options%22%3A%7B%22motorcycle%22%3A%7B%22use_ferry%22%3A0%2C%22country_crossing_cost%22%3A0%2C%22country_crossing_penalty%22%3A0%7D%7D%2C%22units%22%3A%22kilometers%22%7D"
+        },
+        {
+          "label": "Return motorcycle route data",
+          "url": "https://valhalla1.openstreetmap.de/route?json=%7B%22locations%22%3A%5B%7B%22lat%22%3A3.424%2C%22lon%22%3A101.793%7D%2C%7B%22lat%22%3A1.452105%2C%22lon%22%3A103.769434%2C%22type%22%3A%22through%22%2C%22heading%22%3A163%7D%2C%7B%22lat%22%3A1.445774%2C%22lon%22%3A103.769804%2C%22heading%22%3A205%7D%5D%2C%22costing%22%3A%22motorcycle%22%2C%22units%22%3A%22kilometers%22%2C%22costing_options%22%3A%7B%22motorcycle%22%3A%7B%22use_ferry%22%3A0%2C%22country_crossing_cost%22%3A0%2C%22country_crossing_penalty%22%3A0%7D%7D%7D"
+        }
+      ],
+      "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1.446779%2C103.76791&destination=3.424%2C101.793&travelmode=two-wheeler",
+      "highlightMap": {
+        "label": "Chin Swee Caves Temple on map",
+        "url": "https://www.google.com/maps/search/?api=1&query=Chin+Swee+Caves+Temple%2C+Genting+Highlands%2C+Malaysia"
+      },
+      "roundTripKm": 827,
+      "roundTripMinutes": 635
+    },
+    {
+      "id": "kluang",
+      "name": "Kluang",
+      "km": 112,
+      "minutes": 90,
+      "route": "North–South Expressway (E2) → Ayer Hitam exit 244 → FT50 to Kluang",
+      "terrain": "Inland town and hill foothills",
+      "bestFor": "A coffee run with an optional hike",
+      "highlight": "Pull into Kluang for kopi and toast at the old railway station on Jalan Stesen. Gunung Lambak makes a second stop if you want a walk.",
+      "tradeoff": "A Gunung Lambak hike adds time on your feet before the return ride.",
+      "tip": "Pin the Jalan Stesen branch for the railway setting. Bring walking shoes if the hill is part of the plan.",
+      "sources": [
+        {
+          "label": "Railway Assets Corporation · Kluang Rail Coffee",
+          "url": "https://www.rac.gov.my/en/kluang-rails-coffee"
+        },
+        {
+          "label": "Tourism Johor · Kluang district guide",
+          "url": "https://tourism.johor.gov.my/wp-content/uploads/2025/10/KLUANG.pdf"
+        },
+        {
+          "label": "Outbound motorcycle route data",
+          "url": "https://valhalla1.openstreetmap.de/route?json=%7B%22locations%22%3A%5B%7B%22lat%22%3A1.446779%2C%22lon%22%3A103.76791%2C%22heading%22%3A45%7D%2C%7B%22lat%22%3A1.452095%2C%22lon%22%3A103.769268%2C%22type%22%3A%22through%22%2C%22heading%22%3A343%7D%2C%7B%22lat%22%3A2.031%2C%22lon%22%3A103.317%7D%5D%2C%22costing%22%3A%22motorcycle%22%2C%22costing_options%22%3A%7B%22motorcycle%22%3A%7B%22use_ferry%22%3A0%2C%22country_crossing_cost%22%3A0%2C%22country_crossing_penalty%22%3A0%7D%7D%2C%22units%22%3A%22kilometers%22%7D"
+        },
+        {
+          "label": "Return motorcycle route data",
+          "url": "https://valhalla1.openstreetmap.de/route?json=%7B%22locations%22%3A%5B%7B%22lat%22%3A2.031%2C%22lon%22%3A103.317%7D%2C%7B%22lat%22%3A1.452105%2C%22lon%22%3A103.769434%2C%22type%22%3A%22through%22%2C%22heading%22%3A163%7D%2C%7B%22lat%22%3A1.445774%2C%22lon%22%3A103.769804%2C%22heading%22%3A205%7D%5D%2C%22costing%22%3A%22motorcycle%22%2C%22units%22%3A%22kilometers%22%2C%22costing_options%22%3A%7B%22motorcycle%22%3A%7B%22use_ferry%22%3A0%2C%22country_crossing_cost%22%3A0%2C%22country_crossing_penalty%22%3A0%7D%7D%7D"
+        }
+      ],
+      "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1.446779%2C103.76791&destination=2.031%2C103.317&travelmode=two-wheeler",
+      "highlightMap": {
+        "label": "Kluang Rail Coffee on map",
+        "url": "https://www.google.com/maps/search/?api=1&query=Kluang+Rail+Coffee%2C+Jalan+Stesen%2C+Kluang%2C+Malaysia"
+      },
+      "roundTripKm": 224,
+      "roundTripMinutes": 175
+    },
+    {
+      "id": "desaru",
+      "name": "Desaru",
+      "km": 73,
+      "minutes": 70,
+      "route": "Permas Jaya → Senai–Desaru Expressway (E22) → Bandar Penawar → Jalan Desaru",
+      "terrain": "East-coast beach approach",
+      "bestFor": "A beach day with a pillion",
+      "highlight": "Make Desaru Public Beach your turnaround. You can leave the bike at the beach entrance and take a walk along the sand.",
+      "tradeoff": "The northeast monsoon can bring rough seas. A dry ride there can still be a poor day for a swim.",
+      "tip": "Set your map pin to Desaru Public Beach and check the posted parking closing time, especially if you plan to stay late.",
+      "sources": [
+        {
+          "label": "Visit Johor · Desaru Beach",
+          "url": "https://visitjohor2026.my/listing/desaru-beach/"
+        },
+        {
+          "label": "METMalaysia · Monsoon conditions",
+          "url": "https://www.met.gov.my/en/pendidikan/fenomena-cuaca/"
+        },
+        {
+          "label": "Outbound motorcycle route data",
+          "url": "https://valhalla1.openstreetmap.de/route?json=%7B%22locations%22%3A%5B%7B%22lat%22%3A1.446779%2C%22lon%22%3A103.76791%2C%22heading%22%3A45%7D%2C%7B%22lat%22%3A1.452095%2C%22lon%22%3A103.769268%2C%22type%22%3A%22through%22%2C%22heading%22%3A343%7D%2C%7B%22lat%22%3A1.549%2C%22lon%22%3A104.26%7D%5D%2C%22costing%22%3A%22motorcycle%22%2C%22costing_options%22%3A%7B%22motorcycle%22%3A%7B%22use_ferry%22%3A0%2C%22country_crossing_cost%22%3A0%2C%22country_crossing_penalty%22%3A0%7D%7D%2C%22units%22%3A%22kilometers%22%7D"
+        },
+        {
+          "label": "Return motorcycle route data",
+          "url": "https://valhalla1.openstreetmap.de/route?json=%7B%22locations%22%3A%5B%7B%22lat%22%3A1.549%2C%22lon%22%3A104.26%7D%2C%7B%22lat%22%3A1.452105%2C%22lon%22%3A103.769434%2C%22type%22%3A%22through%22%2C%22heading%22%3A163%7D%2C%7B%22lat%22%3A1.445774%2C%22lon%22%3A103.769804%2C%22heading%22%3A205%7D%5D%2C%22costing%22%3A%22motorcycle%22%2C%22units%22%3A%22kilometers%22%2C%22costing_options%22%3A%7B%22motorcycle%22%3A%7B%22use_ferry%22%3A0%2C%22country_crossing_cost%22%3A0%2C%22country_crossing_penalty%22%3A0%7D%7D%7D"
+        }
+      ],
+      "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1.446779%2C103.76791&destination=1.549%2C104.26&travelmode=two-wheeler",
+      "highlightMap": {
+        "label": "Desaru Public Beach on map",
+        "url": "https://www.google.com/maps/search/?api=1&query=Pantai+Awam+Desaru%2C+Johor%2C+Malaysia"
+      },
+      "roundTripKm": 147,
+      "roundTripMinutes": 145
+    },
+    {
+      "id": "johor-bahru",
+      "name": "Johor Bahru",
+      "km": 9,
+      "minutes": 15,
+      "route": "JB motorcycle checkpoint → Jalan Lingkaran Dalam → Jalan Tun Abdul Razak",
+      "terrain": "Causeway and city streets",
+      "bestFor": "A short breakfast ride",
+      "highlight": "Pick up banana cake at Hiap Joo on Jalan Tan Hiok Nee, then walk to the Old Chinese Temple on Jalan Trus.",
+      "tradeoff": "On a short ride into JB, a checkpoint queue can take longer than the ride itself.",
+      "tip": "Pick one marked motorcycle bay for both stops. Check the Woodlands traffic cameras before the return crossing.",
+      "sources": [
+        {
+          "label": "Tourism Malaysia · Hiap Joo Bakery",
+          "url": "https://www.malaysia.travel/explore/a-foodie-s-journey-12-local-eats-in-johor-you-must-try"
+        },
+        {
+          "label": "Tourism Johor · Old Chinese Temple",
+          "url": "https://tourism.johor.gov.my/old-chinese-temple/"
+        },
+        {
+          "label": "Outbound motorcycle route data",
+          "url": "https://valhalla1.openstreetmap.de/route?json=%7B%22locations%22%3A%5B%7B%22lat%22%3A1.446779%2C%22lon%22%3A103.76791%2C%22heading%22%3A45%7D%2C%7B%22lat%22%3A1.452095%2C%22lon%22%3A103.769268%2C%22type%22%3A%22through%22%2C%22heading%22%3A343%7D%2C%7B%22lat%22%3A1.493%2C%22lon%22%3A103.741%7D%5D%2C%22costing%22%3A%22motorcycle%22%2C%22costing_options%22%3A%7B%22motorcycle%22%3A%7B%22use_ferry%22%3A0%2C%22country_crossing_cost%22%3A0%2C%22country_crossing_penalty%22%3A0%7D%7D%2C%22units%22%3A%22kilometers%22%7D"
+        },
+        {
+          "label": "Return motorcycle route data",
+          "url": "https://valhalla1.openstreetmap.de/route?json=%7B%22locations%22%3A%5B%7B%22lat%22%3A1.493%2C%22lon%22%3A103.741%7D%2C%7B%22lat%22%3A1.452105%2C%22lon%22%3A103.769434%2C%22type%22%3A%22through%22%2C%22heading%22%3A163%7D%2C%7B%22lat%22%3A1.445774%2C%22lon%22%3A103.769804%2C%22heading%22%3A205%7D%5D%2C%22costing%22%3A%22motorcycle%22%2C%22units%22%3A%22kilometers%22%2C%22costing_options%22%3A%7B%22motorcycle%22%3A%7B%22use_ferry%22%3A0%2C%22country_crossing_cost%22%3A0%2C%22country_crossing_penalty%22%3A0%7D%7D%7D"
+        }
+      ],
+      "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1.446779%2C103.76791&destination=1.493%2C103.741&travelmode=two-wheeler",
+      "highlightMap": {
+        "label": "Hiap Joo Bakery on map",
+        "url": "https://www.google.com/maps/search/?api=1&query=Hiap+Joo+Bakery%2C+Jalan+Tan+Hiok+Nee%2C+Johor+Bahru%2C+Malaysia"
+      },
+      "roundTripKm": 17,
+      "roundTripMinutes": 25
+    },
+    {
+      "id": "kota-tinggi",
+      "name": "Kota Tinggi",
+      "km": 44,
+      "minutes": 45,
+      "route": "Johor Bahru → Jalan Kota Tinggi (FT3) → Jalan Johor",
+      "terrain": "Inland roads and a river town",
+      "bestFor": "An evening river outing",
+      "highlight": "Ride to Firefly Valley Leisure Park on Jalan Jemaluang for an evening boat trip to see fireflies along the river.",
+      "tradeoff": "The fireflies come out after dark, so a same-day visit means riding home at night.",
+      "tip": "Confirm the boat departure before setting off. Stay in Kota Tinggi if you prefer a daylight ride back.",
+      "sources": [
+        {
+          "label": "Tourism Johor · Firefly Valley Leisure Park",
+          "url": "https://tourism.johor.gov.my/river-cruising-firefly-watching/"
+        },
+        {
+          "label": "Outbound motorcycle route data",
+          "url": "https://valhalla1.openstreetmap.de/route?json=%7B%22locations%22%3A%5B%7B%22lat%22%3A1.446779%2C%22lon%22%3A103.76791%2C%22heading%22%3A45%7D%2C%7B%22lat%22%3A1.452095%2C%22lon%22%3A103.769268%2C%22type%22%3A%22through%22%2C%22heading%22%3A343%7D%2C%7B%22lat%22%3A1.738%2C%22lon%22%3A103.9%7D%5D%2C%22costing%22%3A%22motorcycle%22%2C%22costing_options%22%3A%7B%22motorcycle%22%3A%7B%22use_ferry%22%3A0%2C%22country_crossing_cost%22%3A0%2C%22country_crossing_penalty%22%3A0%7D%7D%2C%22units%22%3A%22kilometers%22%7D"
+        },
+        {
+          "label": "Return motorcycle route data",
+          "url": "https://valhalla1.openstreetmap.de/route?json=%7B%22locations%22%3A%5B%7B%22lat%22%3A1.738%2C%22lon%22%3A103.9%7D%2C%7B%22lat%22%3A1.452105%2C%22lon%22%3A103.769434%2C%22type%22%3A%22through%22%2C%22heading%22%3A163%7D%2C%7B%22lat%22%3A1.445774%2C%22lon%22%3A103.769804%2C%22heading%22%3A205%7D%5D%2C%22costing%22%3A%22motorcycle%22%2C%22units%22%3A%22kilometers%22%2C%22costing_options%22%3A%7B%22motorcycle%22%3A%7B%22use_ferry%22%3A0%2C%22country_crossing_cost%22%3A0%2C%22country_crossing_penalty%22%3A0%7D%7D%7D"
+        }
+      ],
+      "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1.446779%2C103.76791&destination=1.738%2C103.9&travelmode=two-wheeler",
+      "highlightMap": {
+        "label": "Firefly Valley Leisure Park on map",
+        "url": "https://www.google.com/maps/search/?api=1&query=Firefly+Valley+Leisure+Park%2C+Jalan+Jemaluang%2C+Kota+Tinggi%2C+Malaysia"
+      },
+      "roundTripKm": 86,
+      "roundTripMinutes": 90
+    },
+    {
+      "id": "mersing",
+      "name": "Mersing",
+      "km": 134,
+      "minutes": 125,
+      "route": "Johor Bahru → Kota Tinggi → north on FT3 to Mersing",
+      "terrain": "Inland approach to an east-coast town",
+      "bestFor": "A mainland beach ride or island stopover",
+      "highlight": "Take a break at the marine murals on Laman Samudera, then ride out to Pantai Air Papan for a beach picnic.",
+      "tradeoff": "Air Papan is beyond Mersing town. The beach detour cuts into your check-in buffer if you have a Tioman ferry booked.",
+      "tip": "For a ferry day, check the operator’s sailing update and check-in time first. Save the beach for the return leg if the connection is tight.",
+      "sources": [
+        {
+          "label": "Tourism Johor · Mersing district guide",
+          "url": "https://tourism.johor.gov.my/wp-content/uploads/2025/10/MERSING.pdf"
+        },
+        {
+          "label": "Bluewater · Tioman ferry operator",
+          "url": "https://bluewater.my/index.php"
+        },
+        {
+          "label": "Outbound motorcycle route data",
+          "url": "https://valhalla1.openstreetmap.de/route?json=%7B%22locations%22%3A%5B%7B%22lat%22%3A1.446779%2C%22lon%22%3A103.76791%2C%22heading%22%3A45%7D%2C%7B%22lat%22%3A1.452095%2C%22lon%22%3A103.769268%2C%22type%22%3A%22through%22%2C%22heading%22%3A343%7D%2C%7B%22lat%22%3A2.431%2C%22lon%22%3A103.84%7D%5D%2C%22costing%22%3A%22motorcycle%22%2C%22costing_options%22%3A%7B%22motorcycle%22%3A%7B%22use_ferry%22%3A0%2C%22country_crossing_cost%22%3A0%2C%22country_crossing_penalty%22%3A0%7D%7D%2C%22units%22%3A%22kilometers%22%7D"
+        },
+        {
+          "label": "Return motorcycle route data",
+          "url": "https://valhalla1.openstreetmap.de/route?json=%7B%22locations%22%3A%5B%7B%22lat%22%3A2.431%2C%22lon%22%3A103.84%7D%2C%7B%22lat%22%3A1.452105%2C%22lon%22%3A103.769434%2C%22type%22%3A%22through%22%2C%22heading%22%3A163%7D%2C%7B%22lat%22%3A1.445774%2C%22lon%22%3A103.769804%2C%22heading%22%3A205%7D%5D%2C%22costing%22%3A%22motorcycle%22%2C%22units%22%3A%22kilometers%22%2C%22costing_options%22%3A%7B%22motorcycle%22%3A%7B%22use_ferry%22%3A0%2C%22country_crossing_cost%22%3A0%2C%22country_crossing_penalty%22%3A0%7D%7D%7D"
+        }
+      ],
+      "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1.446779%2C103.76791&destination=2.431%2C103.84&travelmode=two-wheeler",
+      "highlightMap": {
+        "label": "Pantai Air Papan on map",
+        "url": "https://www.google.com/maps/search/?api=1&query=Pantai+Air+Papan%2C+Mersing%2C+Johor%2C+Malaysia"
+      },
+      "roundTripKm": 267,
+      "roundTripMinutes": 255
+    },
+    {
+      "id": "port-dickson",
+      "name": "Port Dickson",
+      "km": 298,
+      "minutes": 205,
+      "route": "North–South Expressway (E2) → Seremban exit 219 → FT53 towards Port Dickson",
+      "terrain": "West-coast beach roads",
+      "bestFor": "A seaside weekend with a short walk",
+      "highlight": "Stop at Teluk Kemang Beach, then head to Tanjung Tuan for the forest walk up to the Cape Rachado Lighthouse area.",
+      "tradeoff": "The lighthouse viewpoint involves an uphill walk after parking. Allow for it before the ride home.",
+      "tip": "Choose Teluk Kemang for a quick turnaround. For the lighthouse, pack water and walking shoes and check trail access.",
+      "sources": [
+        {
+          "label": "Tourism Malaysia · Port Dickson beaches and trails",
+          "url": "https://www.malaysia.travel/explore/port-dickson-sun-sand-and-seaside"
+        },
+        {
+          "label": "Port Dickson Municipal Council · Tanjung Tuan",
+          "url": "https://mppd.gov.my/en/visitors/places-interest/tanjung-tuan-light-house"
+        },
+        {
+          "label": "Outbound motorcycle route data",
+          "url": "https://valhalla1.openstreetmap.de/route?json=%7B%22locations%22%3A%5B%7B%22lat%22%3A1.446779%2C%22lon%22%3A103.76791%2C%22heading%22%3A45%7D%2C%7B%22lat%22%3A1.452095%2C%22lon%22%3A103.769268%2C%22type%22%3A%22through%22%2C%22heading%22%3A343%7D%2C%7B%22lat%22%3A2.523%2C%22lon%22%3A101.796%7D%5D%2C%22costing%22%3A%22motorcycle%22%2C%22costing_options%22%3A%7B%22motorcycle%22%3A%7B%22use_ferry%22%3A0%2C%22country_crossing_cost%22%3A0%2C%22country_crossing_penalty%22%3A0%7D%7D%2C%22units%22%3A%22kilometers%22%7D"
+        },
+        {
+          "label": "Return motorcycle route data",
+          "url": "https://valhalla1.openstreetmap.de/route?json=%7B%22locations%22%3A%5B%7B%22lat%22%3A2.523%2C%22lon%22%3A101.796%7D%2C%7B%22lat%22%3A1.452105%2C%22lon%22%3A103.769434%2C%22type%22%3A%22through%22%2C%22heading%22%3A163%7D%2C%7B%22lat%22%3A1.445774%2C%22lon%22%3A103.769804%2C%22heading%22%3A205%7D%5D%2C%22costing%22%3A%22motorcycle%22%2C%22units%22%3A%22kilometers%22%2C%22costing_options%22%3A%7B%22motorcycle%22%3A%7B%22use_ferry%22%3A0%2C%22country_crossing_cost%22%3A0%2C%22country_crossing_penalty%22%3A0%7D%7D%7D"
+        }
+      ],
+      "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1.446779%2C103.76791&destination=2.523%2C101.796&travelmode=two-wheeler",
+      "highlightMap": {
+        "label": "Teluk Kemang Beach on map",
+        "url": "https://www.google.com/maps/search/?api=1&query=Pantai+Teluk+Kemang%2C+Port+Dickson%2C+Malaysia"
+      },
+      "roundTripKm": 596,
+      "roundTripMinutes": 410
+    },
+    {
+      "id": "melaka",
+      "name": "Melaka",
+      "km": 223,
+      "minutes": 165,
+      "route": "North–South Expressway (E2) → Ayer Keroh exit 231 → central Melaka",
+      "terrain": "Expressway and historic city streets",
+      "bestFor": "A heritage and food overnight",
+      "highlight": "Walk from the red Stadthuys at Dutch Square across the river to Jonker Street for food and antique shops.",
+      "tradeoff": "Banda Hilir has car-free periods. A pin inside the historic centre can send you toward a closed approach.",
+      "tip": "Check the city’s closure notice and choose motorcycle parking outside the affected streets. Bring a helmet lock for the walk.",
+      "sources": [
+        {
+          "label": "Tourism Malaysia · Dutch Square",
+          "url": "https://www.malaysia.travel/explore/dutch-square"
+        },
+        {
+          "label": "Melaka City Council · Car-free zone notice",
+          "url": "https://www.mbmb.gov.my/en/mbmb/media-centre/announcements/makluman-pelanjutan-pelaksanaan-zon-bebas-kenderaan-banda-hilir"
+        },
+        {
+          "label": "Outbound motorcycle route data",
+          "url": "https://valhalla1.openstreetmap.de/route?json=%7B%22locations%22%3A%5B%7B%22lat%22%3A1.446779%2C%22lon%22%3A103.76791%2C%22heading%22%3A45%7D%2C%7B%22lat%22%3A1.452095%2C%22lon%22%3A103.769268%2C%22type%22%3A%22through%22%2C%22heading%22%3A343%7D%2C%7B%22lat%22%3A2.19%2C%22lon%22%3A102.249%7D%5D%2C%22costing%22%3A%22motorcycle%22%2C%22costing_options%22%3A%7B%22motorcycle%22%3A%7B%22use_ferry%22%3A0%2C%22country_crossing_cost%22%3A0%2C%22country_crossing_penalty%22%3A0%7D%7D%2C%22units%22%3A%22kilometers%22%7D"
+        },
+        {
+          "label": "Return motorcycle route data",
+          "url": "https://valhalla1.openstreetmap.de/route?json=%7B%22locations%22%3A%5B%7B%22lat%22%3A2.19%2C%22lon%22%3A102.249%7D%2C%7B%22lat%22%3A1.452105%2C%22lon%22%3A103.769434%2C%22type%22%3A%22through%22%2C%22heading%22%3A163%7D%2C%7B%22lat%22%3A1.445774%2C%22lon%22%3A103.769804%2C%22heading%22%3A205%7D%5D%2C%22costing%22%3A%22motorcycle%22%2C%22units%22%3A%22kilometers%22%2C%22costing_options%22%3A%7B%22motorcycle%22%3A%7B%22use_ferry%22%3A0%2C%22country_crossing_cost%22%3A0%2C%22country_crossing_penalty%22%3A0%7D%7D%7D"
+        }
+      ],
+      "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1.446779%2C103.76791&destination=2.19%2C102.249&travelmode=two-wheeler",
+      "highlightMap": {
+        "label": "Dutch Square on map",
+        "url": "https://www.google.com/maps/search/?api=1&query=Dutch+Square%2C+Bandar+Hilir%2C+Melaka%2C+Malaysia"
+      },
+      "roundTripKm": 442,
+      "roundTripMinutes": 330
+    }
+  ],
+  "planning": [
+    {
+      "title": "Crossing at Woodlands",
+      "body": "Check the Causeway cameras before leaving and again before returning. Even a breakfast run to JB involves two border crossings. Leave room in your plans for both.",
+      "links": [
+        {
+          "label": "Woodlands traffic cameras",
+          "url": "https://onemotoring.lta.gov.sg/content/onemotoring/home/digitalservices/view-traffic-cameras.html"
+        }
+      ]
+    },
+    {
+      "title": "Cross-border paperwork",
+      "body": "Bring your passport and riding licence, even if you use QR clearance. Before you leave, check that your bike insurance covers Malaysia and review JPJ’s entry guidance for your vehicle.",
+      "links": [
+        {
+          "label": "ICA land checkpoints",
+          "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/travel-by-road/driving-in-and-out-of-singapore"
+        },
+        {
+          "label": "Malaysia entry advice",
+          "url": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/malaysia/"
+        },
+        {
+          "label": "JPJ vehicle entry portal",
+          "url": "https://vep.jpj.gov.my/"
+        }
+      ]
+    },
+    {
+      "title": "Rain along the way",
+      "body": "Ridecast covers the selected destination. Look up the districts you pass through and your return window. For example, check Kota Tinggi as well as Mersing on an east-coast ride.",
+      "links": [
+        {
+          "label": "METMalaysia weather and warnings",
+          "url": "https://www.met.gov.my/en/"
+        },
+        {
+          "label": "Official flood alerts",
+          "url": "https://publicinfobanjir.water.gov.my/main/?lang=en"
+        }
+      ]
+    },
+    {
+      "title": "Breaks and rain shelters",
+      "body": "On the North–South Expressway, pick fuel and rest stops for each direction. In the MYJalan app, look for Teduhan to find mapped motorcycle shelters along supported highways.",
+      "links": [
+        {
+          "label": "PLUS rest areas and fuel",
+          "url": "https://www.plus.com.my/our-facilities/"
+        },
+        {
+          "label": "MYJalan shelter guide",
+          "url": "https://www.kkr.gov.my/sites/default/files/kempen-myjalan/MYJalan%202.0%20Manual%20Pengguna.pdf"
+        }
+      ]
+    }
+  ]
+}

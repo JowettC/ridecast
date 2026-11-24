@@ -1,0 +1,228 @@
+.route-preview, .guide-card, .guide-destination, .guide-plan-card {
+  border: 1px solid var(--light);
+  background: var(--white);
+  border-radius: var(--radius);
+}
+.route-preview {
+  margin-top: 13px;
+  padding: 13px 20px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.route-preview-icon, .guide-note-icon {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 33px;
+  height: 33px;
+  padding: 7px;
+  color: var(--blue);
+  background: #edf2ff;
+  border-radius: 10px;
+}
+.route-preview strong { font-size: .95rem; }
+.route-preview p, .guide-compare-note, .guide-estimates, .guide-planning-head p {
+  color: var(--muted);
+  font-size: .83rem;
+  line-height: 1.45;
+}
+.guide-text-link, .guide-source-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--blue-dark);
+  font-weight: 650;
+  text-decoration: none;
+}
+.guide-text-link:hover, .guide-source-link:hover { text-decoration: underline; }
+.route-preview .guide-text-link { margin-left: auto; white-space: nowrap; }
+.guide-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(295px, 1fr);
+  grid-template-areas: 'route compare' 'notes compare';
+  align-items: start;
+  gap: 17px;
+}
+.guide-destination { grid-area: route; overflow: hidden; }
+.guide-compare { grid-area: compare; }
+.guide-notes { grid-area: notes; }
+.guide-cover {
+  position: relative;
+  isolation: isolate;
+  padding: clamp(18px, 2.2vw, 31px);
+  color: white;
+  background: radial-gradient(ellipse at top right, #315c80 0%, transparent 63%), #142c46;
+}
+.guide-cover.highlands {
+  background: linear-gradient(105deg, rgba(9,28,48,.94), rgba(6,22,41,.48)),
+              url('./assets/ride-highlands.webp') center 55% / cover;
+}
+.guide-cover-top, .guide-origin, .guide-change, .guide-actions,
+.guide-primary, .guide-secondary, .guide-compare-head, .guide-sort,
+.guide-route-row, .guide-note, .guide-planning-head { display: flex; align-items: center; }
+.guide-cover-top, .guide-compare-head, .guide-planning-head { justify-content: space-between; gap: 12px; }
+.guide-origin { gap: 8px; font-size: .82rem; font-weight: 650; color: #e4efff; }
+.guide-origin .ico { width: 19px; height: 19px; }
+.guide-change {
+  gap: 5px;
+  flex-shrink: 0;
+  padding: 7px 10px;
+  border: 1px solid #adc4d175;
+  border-radius: 8px;
+  background: #12294080;
+  color: #fff;
+  font-size: .78rem;
+  font-weight: 650;
+}
+.guide-change:hover { background: #385674; }
+.guide-change .ico { width: 14px; height: 14px; }
+.guide-heading { margin: 26px 0 20px; }
+.guide-region { font-size: .70rem; text-transform: uppercase; letter-spacing: .13em; color: #c6d6e7; font-weight: 750; }
+#guide-title {
+  font-size: clamp(2.2rem, 4vw, 3.7rem);
+  margin: 3px 0 5px;
+  font-weight: 640;
+  line-height: 1.04;
+  letter-spacing: -.058em;
+  scroll-margin-top: 96px;
+}
+#guide-best { font-size: .98rem; line-height: 1.4; color: #e2edfa; }
+.guide-metrics { display: flex; flex-wrap: wrap; gap: 8px 0; border-top: 1px solid #bdd3e03b; padding-top: 15px; }
+.guide-metrics > div + div { padding-left: clamp(20px,4vw,53px); margin-left: clamp(20px,4vw,53px); border-left: 1px solid #bdd3e03b; }
+.guide-metrics small { display: block; color: #ccdded; font-size: .78rem; line-height: 1.2; margin-bottom: 4px; }
+.guide-metrics strong { font-size: clamp(1.4rem, 2.4vw, 2.15rem); font-weight: 600; letter-spacing: -.035em; line-height: 1.05; }
+.guide-round-trip { margin-top: 13px; font-size: .87rem; line-height: 1.45; color: #e1edfa; }
+.guide-route-detail, .guide-card, .guide-plan-card { padding: clamp(17px, 1.9vw, 26px); }
+.guide-route-row, .guide-note { gap: 12px; align-items: flex-start; }
+.guide-route-row + .guide-route-row { margin-top: 14px; }
+.guide-route-row h3, .guide-note h3, .guide-plan-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -.02em;
+}
+.guide-route-row p, .guide-note p, .guide-plan-card p {
+  margin-top: 3px;
+  font-size: .93rem;
+  line-height: 1.55;
+  color: #47586e;
+  overflow-wrap: anywhere;
+}
+.guide-note-icon .ico { width: 18px; height: 18px; }
+.guide-estimates { margin-top: 16px; border-top: 1px solid var(--light); padding-top: 12px; }
+.guide-actions { gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+.guide-primary, .guide-secondary, .guide-status button {
+  justify-content: center;
+  gap: 7px;
+  padding: 8px 12px;
+  min-height: 37px;
+  border: 1px solid #cbd7e5;
+  border-radius: 9px;
+  background: white;
+  color: #31445f;
+  text-decoration: none;
+  font-weight: 650;
+  font-size: .86rem;
+}
+.guide-primary { color: white; background: var(--blue); border-color: var(--blue); }
+.guide-primary:hover { background: var(--blue-dark); }
+.guide-secondary:hover, .guide-status button:hover { background: #edf2ff; color: var(--blue-dark); }
+.guide-actions .ico, #compare-shortcut .ico { width: 17px; height: 17px; }
+.guide-card h2, .guide-planning h2 { font-size: clamp(1.3rem, 2vw, 1.65rem); font-weight: 660; letter-spacing: -.046em; }
+.guide-sort { gap: 5px; flex-shrink: 0; font-size: .78rem; color: var(--muted); }
+.guide-select { position: relative; }
+.guide-select i { position: absolute; right: 7px; top: 50%; transform: translateY(-50%); pointer-events: none; }
+.guide-select .ico { width: 14px; height: 14px; }
+.guide-sort select {
+  appearance: none;
+  font: inherit;
+  font-weight: 650;
+  color: var(--ink);
+  background: white;
+  border-radius: 7px;
+  border: 1px solid #d5dfeb;
+  min-height: 34px;
+  padding: 4px 24px 4px 8px;
+}
+.guide-sort select:focus-visible { outline: 3px solid #5d85ff; outline-offset: 2px; }
+#compare-title { scroll-margin-top: 20px; }
+.guide-compare-note { margin: 3px 0 15px; }
+.guide-table { border-collapse: collapse; width: 100%; font-size: .84rem; line-height: 1.35; }
+.guide-table thead { background: #f3f6f9; color: var(--muted); }
+.guide-table thead th { padding: 8px 5px; font-size: .72rem; font-weight: 650; white-space: nowrap; }
+.guide-table th:first-child { text-align: left; }
+.guide-table th:first-child, .guide-table td:last-child { padding-inline: 8px; }
+.guide-table th:not(:first-child), .guide-table td { text-align: right; }
+.guide-table td { color: var(--muted); white-space: nowrap; font-size: .8rem; }
+.guide-table tbody tr { border-top: 1px solid #e8edf3; cursor: pointer; }
+.guide-table tbody tr:is(:hover,:focus-within) { background: #eef3fb; }
+.guide-table tbody tr.current-route { background: #edf2ff; box-shadow: inset 3px 0 0 var(--blue); }
+.guide-table th[scope=row] { padding-block: 9px; width: 100%; }
+.guide-table button { text-align: left; padding: 0; font-weight: 700; background: none; }
+.guide-table .current-route button { color: var(--blue-dark); }
+.comparison-fit { display: block; margin-top: 2px; font-size: .75rem; line-height: 1.35; font-weight: 440; color: #55677e; }
+.guide-note { padding: 14px 0; border-bottom: 1px solid #e7ecf2; }
+.guide-note-icon.positive { background: #e8f5ef; color: #27714f; }
+.guide-note-icon.amber { background: #fcf2dd; color: #876217; }
+.guide-sources { margin-top: 14px; }
+.guide-sources h3 { font-size: .8rem; }
+#guide-sources, .guide-plan-links { display: flex; flex-wrap: wrap; gap: 4px 15px; margin-top: 6px; }
+.guide-source-link { font-size: .8rem; line-height: 1.5; }
+.guide-source-link .ico { width: 12px; height: 12px; }
+#guide-highlight-map:not(:empty) { margin-top: 5px; }
+.guide-planning { margin-top: 26px; }
+.guide-planning-head { margin-bottom: 12px; }
+.guide-planning-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,225px),1fr)); gap: 12px; }
+.guide-plan-card { padding: 18px; }
+.guide-plan-card p { font-size: .86rem; }
+.guide-plan-links { margin-top: 10px; }
+.guide-status { display: flex; align-items: center; gap: 10px; color: var(--muted); padding: 16px 0; }
+#compare-shortcut { display: none; }
+@media (min-width:761px) and (max-width:1050px) {
+  .guide-layout { grid-template-columns: minmax(0,1.15fr) minmax(285px,1fr); }
+  .guide-sort > span:first-child { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path:inset(50%); }
+}
+@media (max-width:760px) {
+  .guide-layout { grid-template-columns: minmax(0,1fr); grid-template-areas: 'route' 'notes' 'compare'; gap: 11px; }
+  #compare-shortcut { display: flex; align-self: end; }
+  .guide-heading { margin: 20px 0 17px; }
+}
+@media (min-width:641px) and (max-width:840px) {
+  .topbar-inner { height: auto; flex-wrap: wrap; gap: 0; justify-content: space-between; }
+  .brand { order: 0; padding: 11px 0 5px; }
+  .zone { order: 1; }
+  .main-nav { order: 2; width: 100%; height: 44px; gap: 26px; }
+}
+@media (max-width:640px) {
+  .main-nav { justify-content: space-between; gap: 8px; height: 43px; }
+  .main-nav a { font-size: .83rem; gap: 5px; }
+  .guide-card, .guide-destination, .guide-plan-card, .route-preview { border-radius: 14px; }
+  .route-preview { margin-top: 10px; padding: 11px 12px; gap: 9px; }
+  .route-preview strong, .route-preview .guide-text-link { font-size: .82rem; }
+  .route-preview p { font-size: .75rem; }
+  .route-preview .guide-text-link { white-space: normal; flex-shrink: 0; }
+  #compare-shortcut { margin-top: 3px; min-height: 34px; }
+  .guide-sort select { min-height: 38px; }
+  .guide-table th[scope=row] { padding-block: 11px; }
+  .guide-estimates, .guide-compare-note, .guide-source-link { font-size: .875rem; }
+  .guide-note p, .guide-route-row p, .guide-plan-card p { font-size: 1rem; }
+  .guide-table { font-size: .94rem; }
+  .guide-table td, .comparison-fit { font-size: .84rem; }
+  .guide-table thead th { font-size: .80rem; }
+}
+@media (max-width:440px) {
+  .route-preview-icon { display: none; }
+  .guide-cover-top { align-items: start; gap: 8px; }
+  .guide-origin { align-items: start; font-size: .76rem; max-width: 60%; }
+  .guide-metrics > div + div { padding-left: 18px; margin-left: 18px; }
+  .guide-actions { gap: 6px; }
+  .guide-primary, .guide-secondary { font-size: .79rem; padding: 8px; }
+  .guide-sort > span:first-child { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path:inset(50%); }
+}
+@media (max-width:359px) {
+  .main-nav a .ico { display: none; }
+  .main-nav a { font-size: .79rem; }
+  .guide-planning-head { align-items: start; flex-direction: column; gap: 3px; }
+}
+.wrap > footer { flex-wrap: wrap; gap: 8px 20px; }
+.wrap > footer a { text-decoration: underline; text-underline-offset: .16em; }
