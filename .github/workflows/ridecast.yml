@@ -1,0 +1,30 @@
+name: Ridecast hourly forecast
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  start:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      actions: write
+    steps:
+      - name: Start the update on the Pages publishing branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run ridecast.yml --repo "$GITHUB_REPOSITORY" --ref gh-pages
+
+  publish:
+    if: github.ref == 'refs/heads/gh-pages' && github.event_name == 'workflow_dispatch'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: JowettC/ridecast/.github/workflows/build-pages.yml@main
